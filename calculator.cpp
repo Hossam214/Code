@@ -13,46 +13,29 @@ int main(){
     cin >> num2;
     cout << "Enter + for addition, - for subtraction, * for multiplication, / for division, ^ for exponentiation\n";
     cin >> op;
+    
     switch (op)
     {
     case '+':
-        cout << num1 << op << num2 << '=' << num1 + num2 << "\n";
-        cout << "Have you read it now ";
-        cin >> x;
-        break;
+        cout << num1 << op << num2 << '=' << num1 + num2 << "\n"; break;
     
     case '-':
-        cout << num1 << op << num2 << '=' << num1 - num2 << "\n";
-        cout << "Have you read it now ";
-        cin >> x;
-        break;
+        cout << num1 << op << num2 << '=' << num1 - num2 << "\n"; break;
     
     case '*':
-        cout << num1 << op << num2 << '=' << num1 * num2 << "\n";
-        cout << "Have you read it now ";
-        cin >> x;
-        break;
+        cout << num1 << op << num2 << '=' << num1 * num2 << "\n"; break;
     
     case '/':
-        cout << num1 << op << num2 << '=' << num1 / num2 << "\n";
-        cout << "Have you read it now ";
-        cin >> x;
-        break;
+        cout << num1 << op << num2 << '=' << num1 / num2 << "\n"; break;
     
     case '^':
-        cout << num1 << op << num2 << '=' << pow(num1, num2) << "\n";
-        cout << "Have you read it now ";
-        cin >> x;
-        break;
-    
+        cout << num1 << op << num2 << '=' << pow(num1, num2) << "\n"; break;
     
     default:
-        cout << "Why are you always a wrecker?? Next time enter a valid operation";
-        cout << "Have you read it now";
-        cin >> x;
-        break;
+        cout << "Why are you always a wrecker?? Next time enter a valid operation"; break;
     }
-    return 0;
     
+    cout << "Have you read it now ";
+    cin >> x;
+    return 0;
 }
-
